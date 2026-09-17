@@ -8,6 +8,7 @@
 /* 看起来像数组,编译器实际当成 int* 处理 */
 void f_looks_like_array(int arr[10])
 {
+    // sizeof(arr) 这里的 arr 是 int * 指针，不是数组了，所以sizeof(arr) 结果为 8，即指针大小
     printf("  函数内 sizeof(arr)      = %zu  <- 指针大小!\n", sizeof(arr));
     printf("  函数内 sizeof(arr)/sizeof(arr[0]) = %zu  <- 算出来是错的\n",
            sizeof(arr) / sizeof(arr[0]));

@@ -13,6 +13,11 @@ struct Bad {
     int   b;      /* 4 字节, 要求 4 对齐 -> 前面填 3 */
     char  c;      /* 1 字节 */
     double d;     /* 8 字节, 要求 8 对齐 -> 前面填 7 */
+    char e;       /* 1 字节 */
+    int f;        /* 4 字节, 要求 4 对齐 -> 前面填 3 , 对齐多少只看当前类型 */
+    char g;       /* 1 字节 */
+    /* 由于最后不是 最大类型字节(double 8字节)的倍数，所以最后还需要补齐 7 字节 */
+    // 所以总共 40字节
 };
 
 /* 好布局: 从大到小排列 */
@@ -24,8 +29,14 @@ struct Good {
 };
 
 /* 嵌套 struct: 继承内部最大对齐 */
-struct Inner { int x; char y; };
-struct Outer { char head; struct Inner in; char tail; };
+struct Inner { int x; char y; }; //内部最大是int 4字节，所以最后还需要补齐3字节，所以总共8字节
+struct Outer {
+    char head;  // 1字节
+    struct Inner in; //需要先补3字节，然后自己占8字节
+    char tail; // 1 字节，最后不是4倍数，所以还要补3字节
+    // 所以 Outer 总数是 1 + 3 + 8 + 1 + 3 = 16;
+};
+
 
 /* 位域: 把多个标志压进一个整数 */
 struct Flags {
@@ -38,8 +49,7 @@ struct Flags {
     printf("  %-10s offset=%2zu  size=%2zu  align=%2zu\n", \
            #F, offsetof(T, F), sizeof(((T *)0)->F), _Alignof(__typeof__(((T *)0)->F)))
 
-int main(void)
-{
+int main(void) {
     printf("=== 3.0 基本类型的大小/对齐 ===\n");
     printf("  char=%zu/%zu  short=%zu/%zu  int=%zu/%zu  long=%zu/%zu  double=%zu/%zu  ptr=%zu/%zu  (size/align)\n",
            sizeof(char), _Alignof(char), sizeof(short), _Alignof(short),
@@ -51,10 +61,17 @@ int main(void)
     DUMP(struct Bad, b);
     DUMP(struct Bad, c);
     DUMP(struct Bad, d);
+    DUMP(struct Bad, e);
+    DUMP(struct Bad, f);
+    DUMP(struct Bad, g);
+    /*
+     * 总大小 = 40, 对齐 = 8, 有效数据只有 20 字节 -> padding 20 字节
+     *
+     */
     printf("  总大小 = %zu, 对齐 = %zu, 有效数据只有 %zu 字节 -> padding %zu 字节\n",
            sizeof(struct Bad), _Alignof(struct Bad),
-           sizeof(char) * 2 + sizeof(int) + sizeof(double),
-           sizeof(struct Bad) - (sizeof(char) * 2 + sizeof(int) + sizeof(double)));
+           sizeof(char) * 4 + sizeof(int) * 2 + sizeof(double),
+           sizeof(struct Bad) - (sizeof(char) * 4 + sizeof(int) * 2 + sizeof(double)));
 
     printf("\n=== 3.2 struct Good (从大到小) ===\n");
     DUMP(struct Good, d);
@@ -74,7 +91,8 @@ int main(void)
 
     printf("\n=== 3.4 位域 (PG 的 t_infomask 思路) ===\n");
     printf("  sizeof(struct Flags) = %zu  <- 32 bit 塞进 4 字节\n", sizeof(struct Flags));
-    struct Flags f = {0};
+    struct Flags f = {0}; // 这个是对整个 Flags 结构体置0，不是 f.is_null = 0
+    printf("  is_null=%u is_toast=%u len=%u\n", f.is_null, f.is_toast, f.len);
     f.is_null = 1; f.len = 123;
     printf("  is_null=%u is_toast=%u len=%u\n", f.is_null, f.is_toast, f.len);
 

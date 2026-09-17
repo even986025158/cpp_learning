@@ -9,7 +9,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-/* ---------- 1.1 T*: 修改调用方的 int ---------- */
+/* ---------- 1.1 T*: 修改调用方的 int ----------
+ * 因为C是按值传递，所以想改值就需要传指针int *，然后*out表示的是 int * 指针指向的内存值，
+ * *out += 1 就表示获取实际指针指向的内存空间的值 然后 +1 ， = 赋值回该地址空间
+ * */
 void add_one(int *out)
 {
     *out += 1;              /* * 解引用 = "顺着地址回到调用方的那块内存" */
@@ -58,6 +61,11 @@ void make_string_wrong(char *out, const char *src)
 /* ---------- 1.4 int** 的原型题: void get(int **out) ---------- */
 void get(int **out)
 {
+    /*
+     * static int shared = 42;  程序启动时就赋值了，后面进入方法不会再赋值
+     * static int shared;
+     * shared = 42; //这样写的话每次进入方法都会进行赋值
+     */
     static int shared = 42;
     *out = &shared;         /* 把一个已存在对象的地址交给调用方 */
 }
