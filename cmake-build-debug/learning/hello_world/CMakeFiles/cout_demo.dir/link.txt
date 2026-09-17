@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-10/root/usr/bin/c++ -g CMakeFiles/cout_demo.dir/cout_demo.cpp.o -o cout_demo 

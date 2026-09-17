@@ -1,0 +1,13 @@
+# 编译产物
+*.o
+*.dSYM/
+# 无扩展名的可执行文件
+00_hello
+01_memory_model
+02_pointer_basics
+03_pass_by_value
+04_struct_and_malloc
+01_pointer_out
+02_array_decay
+03_struct_layout
+04_flexible_array

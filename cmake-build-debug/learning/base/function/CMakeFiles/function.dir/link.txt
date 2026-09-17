@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-10/root/usr/bin/c++ -g CMakeFiles/function.dir/function_demo.cpp.o -o function 

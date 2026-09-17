@@ -1,0 +1,453 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						16,
+						17
+					]
+				},
+				{
+					"build" : "math",
+					"jsonFile" : "directory-math-Debug-71457bd15370d33fb0dd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "math",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "learning/hello_world",
+					"jsonFile" : "directory-learning.hello_world-Debug-51b0931d0310da9547fc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "learning/hello_world",
+					"targetIndexes" : 
+					[
+						12,
+						15
+					]
+				},
+				{
+					"build" : "learning/base/var",
+					"jsonFile" : "directory-learning.base.var-Debug-34ce47891ad07c542f7c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "learning/base/var",
+					"targetIndexes" : 
+					[
+						22
+					]
+				},
+				{
+					"build" : "learning/base/const",
+					"jsonFile" : "directory-learning.base.const-Debug-dc07cb6b8be8b03c63b4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "learning/base/const",
+					"targetIndexes" : 
+					[
+						11
+					]
+				},
+				{
+					"build" : "learning/base/data_type",
+					"jsonFile" : "directory-learning.base.data_type-Debug-f595c546e39fa8130c31.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "learning/base/data_type",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "learning/base/str",
+					"jsonFile" : "directory-learning.base.str-Debug-2551b48c0b77267c94f5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "learning/base/str",
+					"targetIndexes" : 
+					[
+						20
+					]
+				},
+				{
+					"build" : "learning/base/arr",
+					"jsonFile" : "directory-learning.base.arr-Debug-4c263f2af1eb8b48be91.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "learning/base/arr",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "learning/base/function",
+					"jsonFile" : "directory-learning.base.function-Debug-d3cde6d3138d31127594.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "learning/base/function",
+					"targetIndexes" : 
+					[
+						14
+					]
+				},
+				{
+					"build" : "learning/base/point",
+					"jsonFile" : "directory-learning.base.point-Debug-c66d011df223666eafea.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "learning/base/point",
+					"targetIndexes" : 
+					[
+						19
+					]
+				},
+				{
+					"build" : "learning/base/struct",
+					"jsonFile" : "directory-learning.base.struct-Debug-55da444ea2093ba41ddb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "learning/base/struct",
+					"targetIndexes" : 
+					[
+						21
+					]
+				},
+				{
+					"build" : "learning/object",
+					"jsonFile" : "directory-learning.object-Debug-f65b8735bd0c6e5167bd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "learning/object",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "c",
+					"jsonFile" : "directory-c-Debug-683978c855fea0ac2ccb.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "c",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					],
+					"name" : "cpp_learning",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "MathFunctions::@874b28b4c7a3e614380d",
+					"jsonFile" : "target-MathFunctions-Debug-11741afd6ecd1bb4e3ad.json",
+					"name" : "MathFunctions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "arr::@88a09bbc16f10c1ef01a",
+					"jsonFile" : "target-arr-Debug-f963dc163889157f6a9c.json",
+					"name" : "arr",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "c_basics_01_pointer_out::@263ab762270d3b73d3e2",
+					"jsonFile" : "target-c_basics_01_pointer_out-Debug-a128011ff4fd031554ff.json",
+					"name" : "c_basics_01_pointer_out",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "c_basics_02_array_decay::@263ab762270d3b73d3e2",
+					"jsonFile" : "target-c_basics_02_array_decay-Debug-f394acfc43ed82300957.json",
+					"name" : "c_basics_02_array_decay",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "c_basics_03_struct_layout::@263ab762270d3b73d3e2",
+					"jsonFile" : "target-c_basics_03_struct_layout-Debug-a64c3d1b98460e0faf98.json",
+					"name" : "c_basics_03_struct_layout",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "c_basics_04_flexible_array::@263ab762270d3b73d3e2",
+					"jsonFile" : "target-c_basics_04_flexible_array-Debug-7b7f037ed5802e381c5f.json",
+					"name" : "c_basics_04_flexible_array",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "c_warmup_00_hello::@263ab762270d3b73d3e2",
+					"jsonFile" : "target-c_warmup_00_hello-Debug-d7e83186261064f72705.json",
+					"name" : "c_warmup_00_hello",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "c_warmup_01_memory_model::@263ab762270d3b73d3e2",
+					"jsonFile" : "target-c_warmup_01_memory_model-Debug-5148a42541845981b1be.json",
+					"name" : "c_warmup_01_memory_model",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "c_warmup_02_pointer_basics::@263ab762270d3b73d3e2",
+					"jsonFile" : "target-c_warmup_02_pointer_basics-Debug-ca6b0af5c7021209a5f7.json",
+					"name" : "c_warmup_02_pointer_basics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "c_warmup_03_pass_by_value::@263ab762270d3b73d3e2",
+					"jsonFile" : "target-c_warmup_03_pass_by_value-Debug-38e29cc20b78234d7481.json",
+					"name" : "c_warmup_03_pass_by_value",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "c_warmup_04_struct_and_malloc::@263ab762270d3b73d3e2",
+					"jsonFile" : "target-c_warmup_04_struct_and_malloc-Debug-536c044182b2160fd1c5.json",
+					"name" : "c_warmup_04_struct_and_malloc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "const_demo::@5cbb368f6e77c5e5b28c",
+					"jsonFile" : "target-const_demo-Debug-46e1cded9ab1714f31a8.json",
+					"name" : "const_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "cout_demo::@acf4d8e12ce63d4144eb",
+					"jsonFile" : "target-cout_demo-Debug-3987244b29992af3c5c3.json",
+					"name" : "cout_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "data_type::@a94897d80de81f6ae55a",
+					"jsonFile" : "target-data_type-Debug-f359513d01835f4aeb61.json",
+					"name" : "data_type",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "function::@3235d43644f8ad373c3d",
+					"jsonFile" : "target-function-Debug-e0e45f983d76bb722534.json",
+					"name" : "function",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "hello_world::@acf4d8e12ce63d4144eb",
+					"jsonFile" : "target-hello_world-Debug-c6d7f8cdb7591babd6e3.json",
+					"name" : "hello_world",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hello_world_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hello_world_main-Debug-4d0f84ca278caeacc3a9.json",
+					"name" : "hello_world_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "math_demo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-math_demo-Debug-7516d44585e777b63254.json",
+					"name" : "math_demo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "object::@b7eea8f95b88ba1a0262",
+					"jsonFile" : "target-object-Debug-9ba633c0f41d2cbb4523.json",
+					"name" : "object",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "point::@bf693df850b94771f9b5",
+					"jsonFile" : "target-point-Debug-007e1234f4ed499f484d.json",
+					"name" : "point",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "str::@2b316899ca39d0308846",
+					"jsonFile" : "target-str-Debug-08ab6cad61675beb7f3d.json",
+					"name" : "str",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "struct::@c0ef8a46b78e27fd55c4",
+					"jsonFile" : "target-struct-Debug-6243f5df5c22cefbbbf3.json",
+					"name" : "struct",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "var_demo::@3761c989b1d9130b5240",
+					"jsonFile" : "target-var_demo-Debug-0bbb38475c4872742547.json",
+					"name" : "var_demo",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/even/Desktop/even/code/cpp/cpp_learning/cmake-build-debug",
+		"source" : "/Users/even/Desktop/even/code/cpp/cpp_learning"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-10/root/usr/bin/c++ -g CMakeFiles/point.dir/point_demo.cpp.o -o point 

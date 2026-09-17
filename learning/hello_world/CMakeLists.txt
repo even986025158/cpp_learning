@@ -1,0 +1,5 @@
+
+# 非根目录CmakeList必须要在根目录CmakeList文件中add_subdirectory才会被使用
+
+add_executable(hello_world hello_world.cpp)
+add_executable(cout_demo cout_demo.cpp)
