@@ -54,6 +54,8 @@ int main(void)
      * 对 NULL 做 *p 会让程序崩溃（段错误 Segmentation fault）。 */
     int *q = NULL;
     printf("  q = %p  (就是 0)\n", (void *) q);
+    // 这里使用 q == NULL 而不是 使用 *q == NULL，可以理解 q 其实是 int * 类型，是指针，即 q 才是指针，
+    // *q 表示的这个地址中存的值，即 int 值，例如: int *q = &x; q表示指向x首地址的指针，*q实际是int类型，表示从这个首指针取4字节，这4字节存的值
     if (q == NULL)
         printf("  用之前先判断 q == NULL，是 C 里最基本的自保动作\n");
     /* printf("%d", *q);   <- 千万别，这行会让程序当场崩溃 */
@@ -62,6 +64,7 @@ int main(void)
     int arr[4] = {11, 22, 33, 44};
     int *pa = &arr[0];          /* 指向第 0 个元素 */
     printf("  pa   = %p, *pa   = %d\n", (void *) pa, *pa);
+    // 因为 pa 是 int * 类型，所以 pa+1 表示的是 pa指向的地址再+1 int长度的下一个地址
     printf("  pa+1 = %p, *(pa+1) = %d   <- 编号 +4，因为一个 int 占 4 柜子\n",
            (void *) (pa + 1), *(pa + 1));
     printf("  pa+2 = %p, *(pa+2) = %d\n", (void *) (pa + 2), *(pa + 2));

@@ -35,8 +35,15 @@ int divide(int a, int b, int *quotient, int *remainder)
 /* ---------- 1.3 T**: 函数内部分配内存,交给调用方 ---------- */
 void make_string(char **out, const char *src)
 {
-    /* out 是"指向 char* 的指针",*out 就是调用方那个 char* 变量本身 */
+    /* out 是"指向 char* 的指针",*out 就是调用方那个 char* 变量本身
+     * strlen(src) 表示 获取字符串长度，+1 是因为 C 字符串末尾还要一个 '\0'，所以要 9 个字节。少 +1 就会写出界。
+     * malloc 表示 申请 strlen(src) + 1 长度的地址空间，然后返回这个地址的首地址
+     * 所以 char * *out = 指向这个空间的指针
+     * malloc 时会记录 这一块空间被分配了，free的时候就会清空这块空间。但是越界不是内核检查出来的，是ASan等工具记录发现的。
+     * 如果没有ASan等工具，则可能存在越界不立即报错的情况，但是在其他操作，比如free会发现这里地址是有问题的，导致程序崩溃
+     * */
     *out = malloc(strlen(src) + 1);
+    // strcpy 表示 将char * src 这个首地址开始到 '\0' 的内容复制到 *out 中
     strcpy(*out, src);
 }
 

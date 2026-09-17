@@ -26,7 +26,7 @@ int main(void)
 {
     printf("=== 4.1 用 . 访问成员 ===\n");
     struct Person p;              /* 一次划走一整片柜子 */
-    strcpy(p.name, "Alice");      /* 字符串不能用 = 赋值，要用 strcpy 拷贝 */
+    strcpy(p.name, "Alice");      /* 字符串不能用 = 赋值，要用 strcpy 拷贝，因为C中字符串本质是char[],不能char[] = char[] 来赋值 */
     p.age = 30;
     p.score = 95.5;
     printf("  %s, %d 岁, %.1f 分\n", p.name, p.age, p.score);
