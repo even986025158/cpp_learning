@@ -1,1 +1,0 @@
-/opt/rh/devtoolset-10/root/usr/bin/c++ -g CMakeFiles/arr.dir/arr_demo.cpp.o -o arr 

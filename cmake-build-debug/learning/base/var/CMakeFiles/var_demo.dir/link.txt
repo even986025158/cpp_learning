@@ -1,1 +1,0 @@
-/opt/rh/devtoolset-10/root/usr/bin/c++ -g CMakeFiles/var_demo.dir/var_demo.cpp.o -o var_demo 

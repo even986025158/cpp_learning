@@ -1,1 +1,0 @@
-/opt/rh/devtoolset-10/root/usr/bin/c++ -g CMakeFiles/data_type.dir/data_type.cpp.o -o data_type 

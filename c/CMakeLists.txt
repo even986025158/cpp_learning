@@ -13,7 +13,7 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 
 # 严格警告：任务卡说「警告本身也属于学习结果，不要直接忽略」
 # 02_array_decay 会故意触发 -Wsizeof-array-argument，那是实验目的，不是错误
-add_compile_options(-Wall -Wextra -Wpedantic -g)
+add_compile_options(-Wall -Wextra -Wpedantic -g -gdwarf-4)
 
 # 把某个子目录下所有 .c 各自编成一个可执行文件
 # target 名 = 前缀 + 文件名，例如 c_warmup_00_hello、c_basics_01_pointer_out
@@ -30,3 +30,9 @@ add_c_experiments(warmup c_warmup)
 
 # 02 章 · 四个必须：out 参数 / 数组退化 / struct 布局 / 柔性数组
 add_c_experiments(basics c_basics)
+
+# D02 练习
+add_executable(c_arena
+        arena/arena.c
+        arena/main.c)
+target_include_directories(c_arena PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/arena)
