@@ -31,6 +31,9 @@ add_c_experiments(warmup c_warmup)
 # 02 章 · 四个必须：out 参数 / 数组退化 / struct 布局 / 柔性数组
 add_c_experiments(basics c_basics)
 
+# D03 插入补课：宏与预处理（读 ereport 之前）
+add_c_experiments(macros c_macros)
+
 # D02 练习
 add_executable(c_arena
         arena/arena.c

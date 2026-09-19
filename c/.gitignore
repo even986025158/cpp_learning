@@ -11,3 +11,6 @@
 02_array_decay
 03_struct_layout
 04_flexible_array
+01_define_replace
+02_function_like
+03_do_while_zero
