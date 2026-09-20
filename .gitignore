@@ -1,6 +1,7 @@
 build/
 build-fd-*/
 cmake-build-*/
+Testing/
 *.o
 *.i
 *.s
