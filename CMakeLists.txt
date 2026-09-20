@@ -11,7 +11,7 @@ cmake_minimum_required(VERSION 3.20)
 # 项目信息
 project(cpp_learning)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
 # 加入一个配置头文件，用于处理 CMake 对源码的设置
 configure_file (
@@ -45,6 +45,11 @@ add_subdirectory(learning/object)
 
 # C 语言学习实验（30 天内核攻坚 D02 起）；不加进来 CLion 会误报 stdio.h not found
 add_subdirectory(c)
+
+# 阶段0 可运行演示（D01–D05）。target 一律 fd_ 前缀，不和上面的旧 target 重名。
+# enable_testing 必须在顶层调用，ctest 才会收录子目录里的 add_test。
+enable_testing()
+add_subdirectory(foundation)
 
 
 # 指定生成目标: add_executable(可执行文件名 源文件1 源文件2)[需要将Cmake文件放在源文件同级目录];表示将源文件编译为可执行文件名;即将main.cpp编译为hello_world_main
