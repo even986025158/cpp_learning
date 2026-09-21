@@ -103,6 +103,9 @@ else ()
 endif ()
 
 # ----- D04 -----
+fd_add_c_demo(fd_d04_00_c_no_ctor d04/00_ctor_dtor/01_c_no_ctor.c)
+fd_add_cxx_demo(fd_d04_00_constructor d04/00_ctor_dtor/02_constructor.cpp)
+fd_add_cxx_demo(fd_d04_00_destructor d04/00_ctor_dtor/03_destructor.cpp)
 fd_add_cxx_demo(fd_d04_01_reference_const d04/01_reference_const.cpp)
 fd_add_cxx_demo(fd_d04_02_lifetime_raii d04/02_lifetime_raii.cpp)
 fd_add_cxx_demo(fd_d04_03_virtual_dispatch d04/03_virtual_dispatch.cpp)
@@ -137,6 +140,9 @@ add_custom_target(fd_all
         fd_d03_07_runtime_load
         fd_d03_plugin
         fd_d03_08_tagged_node_list
+        fd_d04_00_c_no_ctor
+        fd_d04_00_constructor
+        fd_d04_00_destructor
         fd_d04_01_reference_const
         fd_d04_02_lifetime_raii
         fd_d04_03_virtual_dispatch

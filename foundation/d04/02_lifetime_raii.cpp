@@ -8,6 +8,7 @@
 struct Guard {
     const char *name;
     std::string *log;
+    Guard() {}
     Guard(const char *n, std::string *l) : name(n), log(l)
     {
         *log += name;

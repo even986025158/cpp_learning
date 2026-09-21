@@ -41,4 +41,5 @@ private:
 //       two unique_ptr<Expr> children;
 //       int evaluate() const override { return left * right; }
 //   };
-// 写完整再接入 main。不要在这里留一个半成品 class —— 未定义的虚函数会让链接失败。
+// 写完整再接入 main。若只继承纯虚函数却不 override，Multiply 仍是抽象类，实例化时编译失败；
+// 若声明了 override 却不给定义并接入 main，则链接失败。
