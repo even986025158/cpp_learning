@@ -7,7 +7,8 @@
 
 struct Expr {
     virtual ~Expr() = default;
-    virtual int evaluate() const = 0;
+    // 尾部的 `const`， `const` 在参数表后面，念作「这个函数不改对象」，禁止修改成员变量，修改的话编译就会失败
+    virtual int evaluate() const = 0; // virtual
     virtual const char *kind() const { return "Expr"; }
 };
 

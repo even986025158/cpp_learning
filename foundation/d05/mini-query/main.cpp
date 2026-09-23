@@ -48,7 +48,7 @@ int main()
     std::cout << "stage scan: " << scanned.size() << "\n";
     FD_CHECK(scanned.size() == 8, "scan cardinality 8");
 
-    /* predicate: amount >= 20  → drop 10 and 15 */
+    /* predicate: amount >= 20 → drop amounts 10 and 15 (order ids 15 and 16) */
     std::vector<Order> filtered;
     for (const Order &o : scanned) {
         if (o.amount >= 20) {

@@ -1,9 +1,8 @@
 /*
- * 本文件只证明：抛出的异常能被对应的 catch 接住；通过的 assert 不终止进程。
- * 不证明：noexcept、跨线程异常、故意失败的 assert（那会 abort，不进默认测试）。
+ * 本文件只证明：抛出的 runtime_error 能被对应的 catch 接住。
+ * 不证明：assert、noexcept、跨线程异常。
  */
 #include "check.h"
-#include <cassert>
 #include <stdexcept>
 #include <string>
 
@@ -27,8 +26,5 @@ int main()
         what = ex.what();
     }
     FD_CHECK(what == "div-by-zero", "catch received the runtime_error");
-
-    assert(2 + 2 == 4);
-    FD_CHECK(true, "assert that holds does not abort");
     return 0;
 }

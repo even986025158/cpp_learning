@@ -109,9 +109,20 @@ fd_add_cxx_demo(fd_d04_00_destructor d04/00_ctor_dtor/03_destructor.cpp)
 fd_add_cxx_demo(fd_d04_01_reference_const d04/01_reference_const.cpp)
 fd_add_cxx_demo(fd_d04_02_lifetime_raii d04/02_lifetime_raii.cpp)
 fd_add_cxx_demo(fd_d04_03_virtual_dispatch d04/03_virtual_dispatch.cpp)
+fd_add_cxx_demo(fd_d04_03a_override_signature d04/03a_override_signature.cpp)
 fd_add_cxx_demo(fd_d04_04_unique_ptr_move d04/04_unique_ptr_move.cpp)
 fd_add_cxx_demo(fd_d04_05_vector_lambda_template d04/05_vector_lambda_template.cpp)
+fd_add_cxx_demo(fd_d04_05a_template_instantiation d04/05a_template_instantiation.cpp)
+fd_add_cxx_demo(fd_d04_05b_lambda_capture d04/05b_lambda_capture.cpp)
 fd_add_cxx_demo(fd_d04_06_exception_assert d04/06_exception_assert.cpp)
+fd_add_cxx_demo(fd_d04_06a_assert_pass d04/06a_assert_pass.cpp)
+fd_add_cxx_demo(fd_d04_07_virtual_dtor d04/07_virtual_dtor.cpp)
+fd_add_cxx_demo(fd_d04_08_virtual_dispatch_controlled d04/08_virtual_dispatch_controlled.cpp)
+fd_add_cxx_demo(fd_d04_09_implicit_derived_dtor d04/09_implicit_derived_dtor.cpp)
+fd_add_cxx_demo(fd_d04_10_default_ctor d04/10_default_ctor.cpp)
+fd_add_cxx_demo(fd_d04_11_trailing_const d04/11_trailing_const.cpp)
+fd_add_cxx_demo(fd_d04_12_implicit_conversion d04/12_implicit_conversion.cpp)
+fd_add_cxx_demo(fd_d04_13_pointer_bind_later d04/13_pointer_bind_later.cpp)
 
 add_subdirectory(d04/evaluator)
 
@@ -146,9 +157,20 @@ add_custom_target(fd_all
         fd_d04_01_reference_const
         fd_d04_02_lifetime_raii
         fd_d04_03_virtual_dispatch
+        fd_d04_03a_override_signature
         fd_d04_04_unique_ptr_move
         fd_d04_05_vector_lambda_template
+        fd_d04_05a_template_instantiation
+        fd_d04_05b_lambda_capture
         fd_d04_06_exception_assert
+        fd_d04_06a_assert_pass
+        fd_d04_07_virtual_dtor
+        fd_d04_08_virtual_dispatch_controlled
+        fd_d04_09_implicit_derived_dtor
+        fd_d04_10_default_ctor
+        fd_d04_11_trailing_const
+        fd_d04_12_implicit_conversion
+        fd_d04_13_pointer_bind_later
         fd_d04_evaluator
         fd_cmake_demo_app
         fd_mini_query)
